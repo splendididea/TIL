@@ -12,7 +12,7 @@
 
 ### 2 기본 디렉티브 
 
-### 2.1 v-text, v-html 디렉티브 
+#### 2.1 v-text, v-html 디렉티브 
 - v-text, {{}} : innerText 속성에 연결됨, 태그 문자열을 html 인코딩 하여 나타내기 때문에 화면에는 태그 문자열이 그대로 노출 
 - v-html : innerHTML 속성에 연결 태그 문자열을 파싱하여 화면에 나타냄 
 > v-html은 XSS (Crossing Site Scripting) 공격에 취약 v-text 를 쓰는것이 더 안전 
