@@ -30,3 +30,8 @@ v-bind는 생략이 가능하다.
 v-show 는 v-if와의 차이점은 v-if는 조건에 맞지 않으면 렌더링하지 않는다. 
 하지만 v-show 는 일단 렌더링을 하고 display 스타일 속성으로 화면에 보여줄지 여부를 결정한다.
 
+#### 2.5 반복 렌더링 디렉티브 v-for
+데이터가 배열이거나 유사배열인 경우 data in datas, 객체인 경우 해시맵 구조이기 때문에 key로 value값을 구한다. 
+index를 사용하려면 구성요소 구문에 index를 추가 
+- 배열, 유사배열 : v-for="(data, index) in datas" 
+- 객체의 경우 : v-for="(val, key, index) in datas"
