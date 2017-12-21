@@ -35,3 +35,5 @@ v-show 는 v-if와의 차이점은 v-if는 조건에 맞지 않으면 렌더링�
 index를 사용하려면 구성요소 구문에 index를 추가 
 - 배열, 유사배열 : v-for="(data, index) in datas" 
 - 객체의 경우 : v-for="(val, key, index) in datas"
+> Note `v-for`디렉티브는 `v-if`디렉티브와 함께 사용할 경우 `v-for` 디렉티브가 먼저 적용된다.
+여러 요소를 렌더링 할 경우 tamplate을 사용한다. 
