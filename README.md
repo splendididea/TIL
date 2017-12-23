@@ -18,4 +18,5 @@
 
 ### Vue.js
 [Vue JS tamplate and directive](vuejs/vuejs-tamplate-directive.md)
+[Vue JS Instance](vuejs/vuejs-instance.md)
 
