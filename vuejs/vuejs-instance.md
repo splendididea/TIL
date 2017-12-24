@@ -12,3 +12,17 @@ Data 옵션은 Vue인스턴스 내부에서 처리되지 않고 Data옵션에 �
 ## 3. 관찰 속성(watch)
 `계산형 속성(Computed Property)`처럼 하나의 데이터를 기반으로 다른 데이터를 변경할 필요가 있는 경우 `관찰 속성(watch)`을 사용한다. 
 watch 옵션에 등록되는 것은 속성의 이름과 해당 속성이 변경되었을 때 호출되는 함수이다 함수는 인자를 전달 받는데 그 인자는 변경된 속성의 값 
+
+## 4. Vue 인스턴스 라이플 사이클 
+라이플 사이클 훅   | 설명 
+-------------- | -----
+beforeCreate | Vue 인스턴스가 생성 된 후 데이터에 대한 관찰 기능 및 이벤트 감시자 설정 이전에 호출 
+created | 관찰 기능, 계산형 속성, 메서드, 감시자 설정이 완료된 후 호출
+beforeMount | 마운트 시작 전 호출 
+mounted | el에 vue 인스턴스 데이터가 마운트 후 호출 
+beforeUpdate | 가상 DOM이 렌더링, 패치 이전 데이터 변경 전 호출 추가적 상태 변경은 가능하나 추가로 렌더링 하진 않는다. 
+updated | 데이터 변경으로 가상 DOM이 다시 렌더링되고 패치 후 호출 
+beforeDestory | Vue 인스턴스 가 제거되기 전 호출 
+destoryed | Vue 인스턴스 제거된 후 호출 모든 디렉티브 바인딩이 해제, 이벤트 연결 모두 제거된다. 
+
+![Image of Vue js Instance's Life cycle](../img/lifecycle.png)
