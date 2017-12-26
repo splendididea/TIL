@@ -40,5 +40,3 @@ cancelable | 기본 이벤트를 방지할 수 있는지 여부를 리턴
 defaultPrevented | 기본 이벤트가 방지되었는지 여부 리턴
 eventPhase | 이벤트 흐름의 단계를 나타냄 
 srcElement | IE에서 사용되던 속성으로 target과 동일한 속성
-
-### 5.2 키보드 이벤트 관련 속성 
