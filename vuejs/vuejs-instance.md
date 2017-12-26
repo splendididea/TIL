@@ -26,3 +26,19 @@ beforeDestory | Vue 인스턴스 가 제거되기 전 호출
 destoryed | Vue 인스턴스 제거된 후 호출 모든 디렉티브 바인딩이 해제, 이벤트 연결 모두 제거된다. 
 
 ![Image of Vue js Instance's Life cycle](../img/lifecycle.png)
+
+## 5. 이벤트 객체 
+이벤트를 처리하는 메서드는 첫번째 파라미터로 이벤트 객체를 전달 받는다. 
+### 5.1 이벤트 객체의 주요 공통 속성
+속성명 | 설명 
+-----| ----
+target | 이벤트 발생한 HTML 리턴
+currentTarget | 이벤트리스너가 이벤트를 발생시키는 html 요소를 리턴 
+path | 배열값 이벤트리스너가 이벤트를 발생 HTML 요소로부터 document, window 객체로까지 올라가는 경로를 나타냄 
+bubbles | 현재의 이벤트가 버블링 일으키는 이벤트인지 여부를 리턴 
+cancelable | 기본 이벤트를 방지할 수 있는지 여부를 리턴
+defaultPrevented | 기본 이벤트가 방지되었는지 여부 리턴
+eventPhase | 이벤트 흐름의 단계를 나타냄 
+srcElement | IE에서 사용되던 속성으로 target과 동일한 속성
+
+### 5.2 키보드 이벤트 관련 속성 
