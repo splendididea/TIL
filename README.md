@@ -6,8 +6,9 @@
 ### Categories
 
 * [SpringBoot](#springboot)
-* [Git](#github)
+* [Git](#git)
 * [Vue.js](#vuejs)
+* [Javascirpt](#javascript)
 ---
 
 ### SpringBoot
@@ -19,4 +20,7 @@
 ### Vue.js
 - [Vue JS tamplate and directive](vuejs/vuejs-tamplate-directive.md)
 - [Vue JS Instance](vuejs/vuejs-instance.md)
+
+### Javascript
+- [How to init Webpack](webpack/webpack-how-to-init.md)
 
