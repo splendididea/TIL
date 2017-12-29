@@ -4,7 +4,7 @@
 ---
 
 ### Categories
-* [Book](#book/books.md)
+* [Book](book/books.md)
 * [SpringBoot](#springboot)
 * [Git](#git)
 * [Vue.js](#vuejs)
