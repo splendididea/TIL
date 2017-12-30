@@ -1,7 +1,8 @@
 # Lombok 어노테이션 
 Lombok을 사용하면 어노테이션만으로 코드가 컴파일될 때 추가 코드를 만들 수 있다. 
+
 어노테이션 | 설명
--------- | ----
+------- | ---
 @NonNull |  Null값이 될 수 없다는 명시 
 @Cleanup | 자동으로 close() 메소드 호출
 @Getter/Setter | 컴파일 시점에 setter/getter 새성
