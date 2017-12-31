@@ -2,3 +2,5 @@
 
 - [스프링 부트 시작하기](start-springboot.md)
 - [Lombok](lombok.md)
+- [스프링 부트 Jpa](jpa.md)
+- [스프링 부트 Test](test.md)
