@@ -6,4 +6,4 @@
 - [스프링 부트 JPA - 소개](jpa.md)
 - [스프링 부트 JPA - fetch join](jpa-fetch-join.md)
 - [스프링 부트 JPA - 연관관계](jpa-relative.md)
-- [스프링 부트 JPA - 2.0 달라진 점](/jpa2.0-diffence.md)
+- [스프링 부트 JPA - 2.0 달라진 점](/jpa2.0-difference.md)

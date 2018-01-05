@@ -3,6 +3,6 @@
 - JPA의 구현체인 Hibernate의 버전 5.2버전 사용 (Outer Join 이용 방식 차이)
 - 스프링 프레임워크 5.0버전 사용
 - Spring Data JPA 버전도 달라지므로 API 사용법도 달라짐 
-- 
+ 
 
 
