@@ -83,3 +83,15 @@ indexes|index[]|인덱스 생성
 - SEQUENCE 데이터 베이스의 시퀀스를 이용해서 식별키 생성 
 - TABLE 별도의 키를 생성해주는 채번 테이블 
 
+### 2.7 종속적인 엔티티의 영속성 전이에 대한 설정 
+- **All**    : 모든 변경에 대한 전이 
+- **PERSIST** :  저장 시에만 전이
+- **MERGE** :  병합시에만 전이
+- **REMOVE**  :  삭제 시에만 전이 
+- **REFRESH** : 엔티티 매니저의 refresh() 호출 시 전이
+- **DETACH**  :  부모 엔티티가 detach되면 자식 엔티티 역시 detach
+```java
+@OneToMany(cascade = CascadeType.ALL)
+@JoinColumn(name="userno")
+private List<Class> classes;
+```
