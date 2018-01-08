@@ -20,3 +20,21 @@ Public 접근 제어자는 가장 liberal하다. 같은 패키지 내에서는 �
 ## 상속(Inheritance) 
 ![number_classess](../../img/number_classes.jpg)
 ## 다형성(Polymorphism)
+
+### Overload 
+- Overload는 Compile 단계에서 진행된다. 
+- 리턴타입만 다르다고 Overload할 수 없다. 
+
+### Overriding
+#### hashCode() 
+```java
+class Test{
+    public static void main(String[] args){
+        Set<Circle> circleList = new HashSet<>();
+        circleList.add(new Circle(10, 20, 5));
+        circleList.contains(new Circle(10, 20, 5));  // return false
+    }
+}
+```
+
+위의 결과는 false가 나온다. 두 객체는 `parameter`가 같음에도 다른 값으로 인식한다. 이런 경우는 Circle 객체가 hashCode()를 `Override`하면 두 객체를 같은 객체로 인식한다. 

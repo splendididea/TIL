@@ -27,3 +27,6 @@
 ### Oracle
 - [Increase Session](oracle/increase-session.md)
 
+### JPA
+- [JPA Annotations](jpa/annotatios.md)
+

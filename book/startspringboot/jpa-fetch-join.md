@@ -15,6 +15,7 @@ public interface UserRepository extends CrudRepository<User, String> {
     List<Object[]> getUserWithClassCount(String userid);
 }
 ```
+@Query 안의 JPQL의 경우 SQL과 유사하지만 테이블 대신 엔티티 클래스를 이용한다. 
 
 메소드 리턴타입은 List<Object[]>로 처리된다. JPQL에서는 엔티티 타입뿐 아니라 다른 자료형도 반환할수 있기 때문이다.
 
