@@ -9,6 +9,8 @@
 * [Git](#git)
 * [Vue.js](#vuejs)
 * [Javascirpt](#javascript)
+* [Oracle](#oracle)
+* [JPA](#jpa)
 ---
 
 ### SpringBoot

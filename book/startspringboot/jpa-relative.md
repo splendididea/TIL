@@ -13,4 +13,33 @@
 1. 가장 중심이 되는 사람이나 명사를 결정, 이에 대한 구조를 대략적으로 설계
 2. 1에서 생성된 데이터들이 상호작용을 하면서 만들어내는 새로운 데이터를 정의 
 3. 1, 2를 다시 세분화해서 설계
+---
+## 2.연관관계 설정 
 
+일반적으로 연관관계는 `일대다` `다대일`로 양방향으로 나타난다. 상호 참조를 위해서 
+연관관계를 맺는 객체에 `@OneToMany` `@ManyToOne` 어노테이션을 지정해 줌으로 써 서로의 연관관계를 맺어준다. 
+하지만 단순히 어노테이션만 가지고 연관관계를 맺는 경우는 Many에 해당하는 정보를 담는 테이블도 JPA구현체가 생성한다. 
+
+### mappedBy 속성
+그렇게 불필요한 테이블이 생성될 수 있으니 `mappedBy`속성을 이용해서 PK, FK 명시 해 준다. 
+```java
+@OneToMany(mappedBy="board")
+private List<FreeBoardReply> replies;
+```
+`mappedBy`는 종속적인 클래스의 인스턴스 변수를 지정한다. 
+
+### 양방향 설정과 toString()
+Lombok을 사용해서 toString을 사용하면 편하지만 양방향 참조의 경우 무한 toString()을 실행하기 때문에 문제가 발생한다. exclude 속성을 사용해서 특정 인스턴스 변수를 제거한다. 
+
+### 종속적인 엔티티의 영속성 전이에 대한 설정 
+- **All**    : 모든 변경에 대한 전이 
+- **PERSIST** :  저장 시에만 전이
+- **MERGE** :  병합시에만 전이
+- **REMOVE**  :  삭제 시에만 전이 
+- **REFRESH** : 엔티티 매니저의 refresh() 호출 시 전이
+- **DETACH**  :  부모 엔티티가 detach되면 자식 엔티티 역시 detach
+```java
+@OneToMany(cascade = CascadeType.ALL)
+@JoinColumn(name="userno")
+private List<Class> classes;
+```
