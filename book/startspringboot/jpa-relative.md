@@ -43,3 +43,13 @@ Lombok을 사용해서 toString을 사용하면 편하지만 양방향 참조의
 @JoinColumn(name="userno")
 private List<Class> classes;
 ```
+
+### 지연 로딩(lazy loading)
+JPA는 연관관계가 있는 엔티티를 조회할 때 기본적으로 지연 로딩 방식을 사용
+- 개념 정보가 필요기 전까지는 최대한 테이블에 접근하지 않는다. 
+- 목적 - 성능 이슈 엔티티들이 종속관계에 있다면 조인이 복잡할 수록 성능이 저하된다. 
+- 반대 - 즉시 로딩(eager loading) fetch라는 속성값으로 FetchType.EAGER를 지정한다.
+
+
+### @Query와 Fetch Join을 이용한 처리 
+`@Query`를 이용해 엔티티의 일부 속성이나 다른 엔티티를 조회할 때의 리턴 타입은 **컬랙션<배열>** 형태가 된다. 이 경우 `List<Object[]>`에서 List는 결과 데이터의 행(row)를 의미 Object[]는 열(column)을 의미한다. 
