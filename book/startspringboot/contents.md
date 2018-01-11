@@ -8,3 +8,4 @@
 - [스프링 부트 JPA - 연관관계](jpa-relative.md)
 - [스프링 부트 JPA - 2.0 달라진 점](springboot2-difference.md)
 - [스프링 부트 JPA - index](index.md)
+- [스프링 부트 thymeleaf](thymeleaf.md)

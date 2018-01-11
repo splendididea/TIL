@@ -38,3 +38,9 @@ class Test{
 ```
 
 위의 결과는 false가 나온다. 두 객체는 `parameter`가 같음에도 다른 값으로 인식한다. 이런 경우는 Circle 객체가 hashCode()를 `Override`하면 두 객체를 같은 객체로 인식한다. 
+
+---
+### Singleton 클래스 만들기 
+
+
+> Note : Synchronize 키워드 사용시 
