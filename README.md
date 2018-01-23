@@ -28,6 +28,7 @@
 
 ### Oracle
 - [Increase Session](oracle/increase-session.md)
+- [Determine Oracle Tables are locked](oracle/table-loacked.md)
 
 ### JPA
 - [JPA Annotations](jpa/annotatios.md)
