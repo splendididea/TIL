@@ -4,6 +4,9 @@
 - `Abstract Method`가 하나인 인터페이스 
 - 람다식 사용 가능 
 - 람다의 타입도 `Functional Interface`다. 
+- `@Functional Interface`어노테이션으로 특정한다. abstract method는 하나여야 한다. 
+
+람다의 타입에 해당하는 `Functional Interface` 결국 해당 오브젝트가 생성되어야 하는데 메소드를 남겨놓고는 오브젝트 생성을 못 시키기 때문에 람다를 쓰려면 꼭 `Single Abstract Method(SAM)`이어야 한다. 
 
 ## Function 
 R apply(T t) 하나의 타입을 다른 타입으로 바꾼다.
