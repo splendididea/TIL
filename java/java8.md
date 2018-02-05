@@ -57,4 +57,6 @@ Supplier<String> s = () -> "hello World";
 ```
 
 ### Identity Fucntion
+스스로를 리턴하는 function
+
 
