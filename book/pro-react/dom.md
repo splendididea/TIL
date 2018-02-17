@@ -180,3 +180,6 @@ render(root, document.getElementById('example'));
 스타일 이름은 DOM속성과 일관성을 위해 낙타 표기법을 적용해 지정한다.(예: node.style.backgroundImage)
 
 
+## ref
+리액트 컴포넌트는 렌더링 할 때 항상 가상 DOM을 대상으로 작업한다. 
+
