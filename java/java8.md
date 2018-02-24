@@ -57,11 +57,4 @@ isPositive.test(num)
 Supplier<String> s = () -> "hello World";
 ```
 
-<<<<<<< HEAD
 ## stream forEach문 사용시 주의 할 점 
-=======
-### Identity Fucntion
-스스로를 리턴하는 function
-
-
->>>>>>> 541b08c87fcb8baa048b459b8ee7726fba3977f2
