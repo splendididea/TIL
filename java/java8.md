@@ -55,3 +55,6 @@ isPositive.test(num)
 ```java
 Supplier<String> s = () -> "hello World";
 ```
+## Stream API
+
+
