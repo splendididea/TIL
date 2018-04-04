@@ -1,8 +1,9 @@
 # Modern Java
 
+## 개요 
 [Kevin](https://github.com/Kevin-Lee)님의 [모던 자바 못다한 이야기](https://github.com/Kevin-Lee/modern-java-untold) 강좌를 보고 정리
 
-## 함수형 인터페티스(Functional Interface)
+## 함수형 인터페이스(Functional Interface)
 - `Abstract Method`가 하나인 인터페이스 
 - 람다식 사용 가능 
 - 람다의 타입도 `Functional Interface`다. 
@@ -58,3 +59,5 @@ Supplier<String> s = () -> "hello World";
 ## Stream API
 
 
+
+## stream forEach문 사용시 주의 할 점 
